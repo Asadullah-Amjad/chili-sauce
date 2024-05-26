@@ -85,6 +85,7 @@ const User_Controller = {
    },
    verifyEmail: async (req, res) => {
       const param = req.params.id;
+      console.log("🚀 ~ verifyEmail: ~ param:", param)
       try {
          console.log("request PArams id", param)
          return res.status(200).json({ message: 'Email Verified Successfully', id: param })
